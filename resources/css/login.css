@@ -1,0 +1,116 @@
+/* Estilo para centralizar o conteúdo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;  /* Azul clarinho (Alice Blue) para o fundo */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+#imgAPAE {
+    margin-bottom: 10px;
+}
+
+/* Caixa do formulário */
+.caixaLogin {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(3, 57, 138, 0.459); /* Sombra suave */
+    width: 350px;
+    align-items: center;
+}
+
+/* Estilo para os campos de texto (Usuário e Senha) */
+#Usuario,
+#Senha {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 8px;
+    border: 1px solid #a8d5e2;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+#Senha {
+    padding-right: 40px; /* Espaço para o ícone do olho */
+}
+
+/* Contêiner do campo de senha com posição relativa */
+.senhaContainer {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo quando o campo está em foco */
+#Usuario:focus,
+#Senha:focus {
+    border-color: #1b2e30;
+    box-shadow: 0 0 5px rgba(47, 67, 68, 0.5);
+}
+
+/* Placeholder dos campos de texto */
+#Usuario::placeholder,
+#Senha::placeholder {
+    font-size: 16px;
+    letter-spacing: normal;
+    color: #7f8c8d;
+}
+
+/* Ajuste vertical apenas no placeholder da senha */
+#Senha::placeholder {
+    transform: translateY(-3px);
+}
+
+/* Estilo para o botão de login */
+#Login {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Login:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para o ícone do olho */
+.olhoIcone {
+    background: none;
+    border: none;
+    scale: 2.3;
+    position: absolute;
+    right: 18px;
+    top: 72%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: #7f8c8d;
+}
+
+.olhoIcone:hover {
+    color: #2c3e50;
+}
+
+.mensagem-erro {
+    color: #e74c3c;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    height: 16px;
+}
